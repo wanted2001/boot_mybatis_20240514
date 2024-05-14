@@ -41,7 +41,7 @@ public class BoardController {
   @PostMapping("/modify")
   public String modify(BoardVO bvo){
    bsv.modify(bvo);
-    return "redirect:/board/detail"+bvo.getBno();
+    return "redirect:/board/detail?bno="+bvo.getBno();
   }
 
   @PostMapping("/remove")

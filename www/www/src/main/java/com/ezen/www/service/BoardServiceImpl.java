@@ -31,8 +31,12 @@ public class BoardServiceImpl implements  BoardService{
   }
 
   @Override
-  public void modify(BoardVO bvo) { return boardMapper.modify(bvo);}
+  public void modify(BoardVO bvo) {
+      boardMapper.modify(bvo);
+  }
 
   @Override
-  public void remove(long bno) { return boardMapper.remove(bno);}
+  public void remove(long bno) {
+      boardMapper.remove(bno);
+  }
 }
